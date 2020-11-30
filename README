@@ -1,3 +1,4 @@
+Домашнее задание
 Тестирование API (requests + json schema)
 Цель: Тестирование API сервиса с помощью Python используя библиотеки pytest, requests, jsonschema
 1. Тестирование сервиса jsonplaceholder.typicode.com
@@ -25,3 +26,18 @@ g) positive/negative тесты для Filtering resources.
 В negative тестах нужно убедиться, что при передаче в запросе невалидных значений полей “userId", “id”, “title” и “completed” - API возвращает код 200 и пустой массив данных и написать тесты для этого случая
 
 Все тесты должны успешно проходить
+
+
+2. Тестирование json sсhema сервиса jsonplaceholder.typicode.com
+Написать тесты для проверки структуры json (schema) todos - https://jsonplaceholder.typicode.com/todos
+Схемы должны быть оформлены в виде файлов и использоваться тестами
+Для теста Listing all resources нужно использовать файл со схемой из теста Getting a resource указав ссылку на него в схеме
+
+Список тестов:
+
+a) Getting a resource
+
+b) Listing all resources
+
+Все тесты должны успешно проходить
+Критерии оценки: Репозиторий должен быть правильно оформлен: README, gitignore (никаких служебных или лишних файлов), requirements.txt, PEP8 
