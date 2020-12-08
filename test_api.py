@@ -32,7 +32,7 @@ def test_listing_positive(api_test):
 def test_create_positive(api_test):
     payload = {'title': 'foo', 'body': 'bar', 'userId': 1, "completed": True}
     res = api_test.post(payload)
-
+    assert res.status_code == 201
     j = res.json()
     assert j['id'] == POSTS_MAX + 1
     assert j['userId'] == 1
